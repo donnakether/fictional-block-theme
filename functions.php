@@ -207,6 +207,21 @@ class PlaceholderBlock {
 }
 
 new PlaceholderBlock("eventsandblogs");
+new PlaceholderBlock("header");
+new PlaceholderBlock("footer");
+new PlaceholderBlock("singlepost");
+new PlaceholderBlock("page");
+new PlaceholderBlock("pagesearch");
+new PlaceholderBlock("pagepastevents");
+new PlaceholderBlock("blogindex");
+new PlaceholderBlock("programarchive");
+new PlaceholderBlock("campusarchive");
+new PlaceholderBlock("eventarchive");
+new PlaceholderBlock("singlecampus");
+new PlaceholderBlock("singleevent");
+new PlaceholderBlock("singleprogram");
+new PlaceholderBlock("singleprofessor");
+new PlaceholderBlock("mynotes");
 
 class JSXBlock {
    function __construct($name, $renderCallback = null, $data = null) {
@@ -243,3 +258,5 @@ class JSXBlock {
 new JSXBlock('banner', true, ['fallbackimage' => get_theme_file_uri('/images/library-hero.jpg')]);
 new JSXBlock('genericheading');
 new JSXBlock('genericbutton');
+new JSXBlock('slideshow', true);
+new JSXBlock('slide', true, ['themeimagepath' => get_theme_file_uri('/images/')]);
